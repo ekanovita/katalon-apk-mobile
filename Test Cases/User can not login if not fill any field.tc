@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>User can not login if not fill any field</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3a23793e-95dd-490d-bd95-7e477cd8fa15</testCaseGuid>
+</TestCaseEntity>
