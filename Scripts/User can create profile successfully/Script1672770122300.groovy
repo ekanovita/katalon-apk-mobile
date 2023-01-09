@@ -33,9 +33,11 @@ Mobile.setText(findTestObject('Create Profile/android.widget.EditText - Confirm 
 
 Mobile.tap(findTestObject('Create Profile/android.widget.Button - Create Profile'), 0)
 
-Mobile.waitForElementPresent(findTestObject('On Boarding/android.widget.TextView - Bank App Demo'), 0)
+//Mobile.waitForElementPresent(findTestObject('On Boarding/android.widget.TextView - Bank App Demo'), 0)
+//
+//Mobile.verifyElementText(findTestObject(('Login Form/android.widget.EditText - ' + username) + ''), username)
 
-Mobile.verifyElementText(findTestObject(('Login Form/android.widget.EditText - ' + username) + ''), username)
+GlobalVariable.username = username
+GlobalVariable.password = password
 
-//Mobile.verifyElementText(findTestObject('Login Form/android.widget.CheckBox - Remember Credentials'), 'true')
 

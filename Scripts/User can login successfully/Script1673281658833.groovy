@@ -17,3 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.getText(findTestObject('Object Repository/Login Form/android.widget.TextView - Bank App Demo'), 0)
+
+Mobile.verifyElementExist(findTestObject(('Object Repository/Login Form/android.widget.EditText - ' + GlobalVariable.username) + 
+        ''), 0)
+
+//Mobile.verifyElementExist(findTestObject(('Object Repository/Login Form/android.widget.EditText - ' + GlobalVariable.password) + 
+//        ''), 0)
+Mobile.verifyElementExist(findTestObject('Object Repository/Login Form/android.widget.Button - LOGIN'), 0)
+
+Mobile.verifyElementExist(findTestObject('Object Repository/Login Form/android.widget.TextView - Dont have a profile'), 
+    0)
+
+Mobile.tap(findTestObject('Login Form/android.widget.Button - LOGIN'), 0)
+
+Mobile.closeApplication()
+
